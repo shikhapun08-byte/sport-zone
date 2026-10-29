@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sports Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SPORTS ZONE</h1>
+    <p>We Would Love to Hear From You</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="football.html">Football</a>
+    <a href="basketball.html">Basketball</a>
+    <a href="cricket.html">Cricket</a>
+    <a href="athletics.html">Athletics</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="content">
+    <h2>Contact Us</h2>
+
+    <p>
+        Do you have a question about sports?
+        Tell us about your favourite sport.
+    </p>
+
+    <form onsubmit="event.preventDefault(); alert('Thank you for your feedback!');">
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="sport">Favourite Sport:</label>
+        <select id="sport" name="sport">
+            <option>Football</option>
+            <option>Basketball</option>
+            <option>Cricket</option>
+            <option>Athletics</option>
+            <option>Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here"
+                  required></textarea>
+
+        <button type="submit" class="button">Submit</button>
+    </form>
+
+    <p><strong>Thank you for visiting Sports Zone!</strong></p>
+</main>
+
+<footer>
+    <p>&copy; 2026 Sports Zone</p>
+</footer>
+
+</body>
+</html>

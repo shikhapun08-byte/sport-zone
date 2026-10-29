@@ -1,0 +1,272 @@
+/* General settings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f0;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Website header */
+
+header {
+    background-color: #123c2b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #c8f169;
+}
+
+/* Navigation menu */
+
+nav {
+    background-color: #20563d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c8f169;
+    color: #123c2b;
+}
+
+/* Home page hero section */
+
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #dcebd9;
+}
+
+.hero h2 {
+    font-size: 34px;
+    color: #123c2b;
+}
+
+.hero img {
+    width: 90%;
+    max-width: 850px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Main content */
+
+.content {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.content h2 {
+    color: #20563d;
+    font-size: 30px;
+}
+
+.content h3 {
+    color: #34754c;
+    margin-top: 25px;
+}
+
+.content p,
+.content li {
+    font-size: 16px;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
+/* Sports cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: #f1f5f0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #20563d;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #20563d;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #34754c;
+}
+
+/* Sports page images */
+
+.feature-image {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Quote section */
+
+.quote {
+    text-align: center;
+    background-color: #dcebd9;
+    padding: 35px 20px;
+    margin-top: 35px;
+}
+
+.quote h2 {
+    color: #123c2b;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #20563d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #34754c;
+}
+
+/* Contact form */
+
+form {
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Footer */
+
+footer {
+    background-color: #123c2b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+/* Responsive design for mobile devices */
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .content {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+}
+Compose
+Write to Susan Pun
